@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portofolio.css">
+    <title>Portofolio | AlviaAa</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="logo">AlviaAa</p>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="portofolio.html" class="active"> Portofolio</a></li>
+                <li><a href="skill.html"> Skill</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">My Collection</span>
+            <h1>Sertifikat <span class="highlight">Saya</span></h1>
+            <p>Kumpulan sertifikat kompetensi yang saya peroleh dari berbagai platform belajar</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">9+</span>
+                    <span class="stat-label">Total Sertifikat</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Platform</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2024</span>
+                    <span class="stat-label">Mulai Belajar</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="filter-section">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all"> Semua</button>
+            <!-- <button class="filter-btn" data-filter="tech"> Teknologi</button>
+            <button class="filter-btn" data-filter="bisnis"> Bisnis & Keuangan</button> -->
+            <button class="filter-btn" data-filter="lainnya">Lainnya</button>
+        </div>
+    </section>
+
+    <main class="foto">
+        <div class="certificate-grid" id="certificateGrid">
+            
+            <!-- Sertifikat 1 - Cloud & AI -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/AI.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 084900.png" alt="Cloud & AI">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Dasar Cloud & Gen AI</h3>
+                        <p>AWS × Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 2 - Backend JS -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/BE_JS.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 084630.png" alt="Backend JS">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Back-End Pemula</h3>
+                        <p>JavaScript - Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 3 - Frontend Web -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/FE.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 085205.png" alt="Frontend Web">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Membuat Front-End Web</h3>
+                        <p>HTML/CSS/JS - Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 4 - Financial Literacy -->
+            <div class="certificate-item" data-category="bisnis">
+                <a href="images/Financial_Literacy.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 090002.png" alt="Financial Literacy">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Introduction to Financial Literacy</h3>
+                        <p>Corporate Finance Institute</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 5 - Dasar JS -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/JS.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 090140.png" alt="Dasar JS">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Dasar Pemrograman JavaScript</h3>
+                        <p>Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 6 - React -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/React.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 090257.png" alt="React">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Membuat Aplikasi Web dengan React</h3>
+                        <p>Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 7 - K3 -->
+            <div class="certificate-item" data-category="lainnya">
+                <a href="sertifikat/k3.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2024-12-12 140658.png" alt="K3">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Keselamatan dan Kesehatan Kerja</h3>
+                        <p>SMK Wikrama Bogor</p>
+                        <span class="date">2024</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 8 - Logic Programming -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/Pemograman_Logic.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 090444.png" alt="Logic Programming">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Pengenalan ke Logika Pemrograman</h3>
+                        <p>Programming Logic 101</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sertifikat 9 - Dasar Web -->
+            <div class="certificate-item" data-category="tech">
+                <a href="images/Pemograman_web.pdf" target="_blank">
+                    <div class="certificate-img">
+                        <img src="images/Screenshot 2026-04-04 090714.png" alt="Dasar Web">
+                        <div class="overlay">
+                            <span> Klik untuk lihat</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Belajar Dasar Pemrograman Web</h3>
+                        <p>HTML/CSS - Dicoding</p>
+                        <span class="date">2025</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024-2025 Alviatul Hasanah | All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="skill.html">Skill</a>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const certificateItems = document.querySelectorAll('.certificate-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                certificateItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

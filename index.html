@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AlviaAa | Personal Portfolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <p class="logo">AlviaAa</p>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown()">Tugas</a>
+                    <div class="dropdown-content">
+                        <a href="article.html">PIPAS</a>
+                        <a href="sunda.html">B.Sunda</a>
+                        <a href="sejarah.html">Sejarah</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+   
+        <section id="Home" class="about">
+            <div class="about-text">
+                <h2>I'M ALVIATUL <span>HASANAH</span></h2>
+                <p class="tagline">Student | Future Entrepreneur | Tech Enthusiast</p>
+                <p>
+                    Hi, saya Alviatul Hasanah, siswa SMK Wikrama Bogor yang tertarik pada bisnis dan teknologi.
+                    Saya disiplin, bertanggung jawab, dan terus mengembangkan skill untuk menjadi pengusaha sukses.
+                </p>
+                <h4>Follow me:</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/allwh1tee_" target="_blank" class="social-link"> Instagram</a>
+                    <a href="https://www.linkedin.com/in/alviatul-hasanah/" target="_blank" class="social-link">🔗
+                        LinkedIn</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/fto.jpeg" alt="foto Alvia">
+            </div>
+        </section>
+
+        <section class="section-education">
+            <h2> Education</h2>
+            <div class="education-cards">
+                <div class="education-card">
+                    <div class="card-timeline">
+                        <span class="card-year-start">2015</span>
+                        <span class="card-year-sep">—</span>
+                        <span class="card-year-end">2021</span>
+                    </div>
+                    <div class="card-institution">MI AN-NABA 01</div>
+                    <div class="card-major">Madrasah Ibtidaiyah</div>
+                    <div class="card-desc">Dasar-dasar keislaman dan akademik</div>
+                </div>
+                <div class="education-card">
+                    <div class="card-timeline">
+                        <span class="card-year-start">2021</span>
+                        <span class="card-year-sep">—</span>
+                        <span class="card-year-end">2024</span>
+                    </div>
+                    <div class="card-institution">MTS AL-ISTIQOMAH</div>
+                    <div class="card-major">Madrasah Tsanawiyah</div>
+                    <div class="card-desc">Pengembangan karakter & pengetahuan umum</div>
+                </div>
+                <div class="education-card">
+                    <div class="card-timeline">
+                        <span class="card-year-start">2024</span>
+                        <span class="card-year-sep">—</span>
+                        <span class="card-year-end">2027</span>
+                    </div>
+                    <div class="card-institution">SMK WIKRAMA BOGOR</div>
+                    <div class="card-major">PPLG - Pengembangan Perangkat Lunak</div>
+                    <div class="card-desc">Web development, UI/UX, & kewirausahaan digital</div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="section-projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Carbon.png" alt="Project 1">
+                    </div>
+                    <h3>PROJECT CARBON</h3>
+                    <p>Aplikasi monitoring intensitas karbon berbasis React dengan integrasi API real-time. Data diambil dan diuji menggunakan Postman untuk memastikan performa sistem berjalan optimal.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>API</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/carbon (2).png" alt="Project 2">
+                    </div>
+                    <p>Aplikasi monitoring intensitas karbon berbasis React dengan integrasi API real-time. Data diambil dan diuji menggunakan Postman untuk memastikan performa sistem berjalan optimal.</p>
+                    <div class="project-tags">
+                         <span>React</span>
+                        <span>API</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2> Contact Me</h2>
+            <div class="wa-container">
+                <a href="https://wa.me/6285772183917?text=Halo%20Alvia,%20saya%20mau%20nanya%20..." class="wa-button">
+                    Chat WhatsApp
+                </a>
+                <p>Atau kirim email ke: <a href="mailto:alviatulhasanah26@gmail.com"
+                        class="email-link">alviatulhasanah26@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Alviatul Hasanah</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown a') && !event.target.closest('.dropdown')) {
+                var dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(function (dropdown) {
+                    dropdown.style.display = 'none';
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
